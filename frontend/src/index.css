@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+@font-face {
+  font-family: 'FaceYourFears';
+  src: url('./assets/fonts/Faceyourfears-31J6.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Haunted';
+  src: url('./assets/fonts/Haunted.ttf') format('truetype');
+}
+
+:root {
+  /* global fonts */
+  --font-title: 'FaceYourFears', sans-serif;
+  --font-headline: 'Haunted', sans-serif;
+  --font-typewriter: 'Special Elite', cursive;
+  /* global colors */
+  --color-prime: black;
+  --color-secondary: crimson;
+  --color-dark: #1b1b1b;
+  --color-darkOpacity: #1b1b1b7f;
+  --color-mediumDark: #555555;
+  --color-mediumDarkOpacity: #55555565;
+  --color-medium: #888888;
+  --color-mediumOpacity: #88888822;
+  --color-mediumLight: #b3b3b3;
+  --color-light: #d9d9d9;
+  /* global gradients */
+  --gradient-circle: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5998774509803921) 36%,
+    rgba(0, 0, 0, 1) 74%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  /* global shadows */
+  --shadow-basic: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --shadow-invert: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+* {
+  /* global reset & styles */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}

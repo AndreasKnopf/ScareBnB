@@ -1,0 +1,36 @@
+.foundWrapper {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('../../assets/images/notFoundImage.jpg');
+  background-size: cover;
+  position: relative;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFoundSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 2rem;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  color: white;
+  line-height: 3rem;
+  width: fit-content;
+  text-align: center;
+  max-width: 400px;
+}
+.notFoundHeading {
+  font-size: 3rem;
+  color: gold;
+}
+
+.foundWrapper p:nth-of-type(2) {
+  font-weight: 600;
+  font-style: italic;
+}

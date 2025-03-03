@@ -1,0 +1,130 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 8px 16px rgba(0, 0, 0, 0.6),
+    inset 8px 0 16px rgba(0, 0, 0, 0.6);
+
+  .intro_textArea {
+    text-align: center;
+    text-shadow: 6px 6px 3px black;
+    color: var(--color-light);
+    margin-top: 6rem;
+
+    .intro_title {
+      font-size: clamp(1.5rem, 1.5vw, 5rem);
+      font-family: var(--font-headline);
+      font-weight: normal;
+      letter-spacing: 0.5rem;
+    }
+
+    .lineBreak {
+      display: flex;
+      justify-content: center;
+      margin: 1rem;
+
+      hr {
+        width: 400px;
+        border: 1px solid gray;
+        border-radius: 3px;
+        box-shadow: 2px 2px 2px black;
+        margin: 0.5rem;
+      }
+    }
+
+    p {
+      font-size: clamp(1rem, 1.5vw, 1rem);
+      font-family: var(--font-typewriter);
+      letter-spacing: 0.1rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .highlight_section {
+    .highlight_header {
+      margin-top: 2rem;
+      padding: 0 2rem;
+    }
+
+    .acco_highlights {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1rem;
+      margin: 2rem auto;
+
+      .card {
+        width: 250px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .card_1 {
+        animation: float 3s ease-in-out infinite;
+        animation-delay: 0s;
+      }
+      .card_2 {
+        animation: float 3s ease-in-out infinite;
+        animation-delay: 0.3s;
+      }
+      .card_3 {
+        animation: float 3s ease-in-out infinite;
+        animation-delay: 0.6s;
+      }
+      .card_4 {
+        animation: float 3s ease-in-out infinite;
+        animation-delay: 0.9s;
+      }
+    }
+
+    .highlight_bottom {
+      display: flex;
+      justify-content: space-between;
+      color: var(--color-medium);
+      padding: 0 2rem 2rem 2rem;
+    }
+  }
+}
+
+@media (max-width: 1091px) {
+  .homepage {
+    margin-top: 2.2rem;
+  }
+}
+
+
+@media (min-width: 701px) {
+  .intro_textArea {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  .intro_textArea {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .highlight_header {
+    text-align: center;
+  }
+
+  .highlight_bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+/* floating animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
