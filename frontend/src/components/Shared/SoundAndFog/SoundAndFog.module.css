@@ -72,15 +72,15 @@
 }
 
 .fogLayer1 {
-  background-image: url('../../../assets/images/white-diamond.png');
+  background-image: url('/images/white-diamond.png');
 }
 
 .fogLayer2 {
-  background-image: url('../../../assets/images/white-diamond.png');
+  background-image: url('/images/white-diamond.png');
 }
 
 .fogLayer3 {
-  background-image: url('../../../assets/images/white-diamond.png');
+  background-image: url('/images/white-diamond.png');
   animation-delay: 35s;
 }
 

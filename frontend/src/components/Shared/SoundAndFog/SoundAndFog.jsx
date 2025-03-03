@@ -6,7 +6,8 @@ import {
   MusicNotes,
   SpeakerSimpleSlash,
 } from '@phosphor-icons/react';
-import bgAtmo from '../../../assets/audio/horror-background-ambient-256309.mp3';
+
+const bgAtmo = '/audio/horror-background-ambient-256309.mp3';
 
 export default function SoundAndFog() {
   const [isFogActive, setIsFogActive] = useState(true);

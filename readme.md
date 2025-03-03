@@ -35,7 +35,7 @@ This project was built using the MERN stack, which includes:
 
 ## Screenshot of the Homepage
 
-![Homepage](./frontend/src/assets/images/screenshots/homepage.png)
+![Homepage](./frontend/public/screenshots/homepage.png)
 
 ## Credits
 
