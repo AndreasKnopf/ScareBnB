@@ -6,7 +6,7 @@
   letter-spacing: 0.5rem;
   color: var(--color-light);
   text-shadow: 6px 6px 3px black;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .controls {
@@ -56,9 +56,9 @@
   }
 }
 
-@media (max-width: 1091px) {
+@media (max-width: 500px) {
   .accommodationList {
-    margin-top: 7.5rem;
+    margin-top: 10rem;
   }
 
   .h2 {

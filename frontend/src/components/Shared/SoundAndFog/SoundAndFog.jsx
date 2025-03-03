@@ -53,22 +53,22 @@ export default function SoundAndFog() {
       <button
         onClick={toggleFog}
         className={`${styles.toggleButton} ${styles.forFog}`}
-        aria-label={isFogActive ? 'Nebel deaktivieren' : 'Nebel aktivieren'}
-        title={isFogActive ? 'Nebel deaktivieren' : 'Nebel aktivieren'}
+        aria-label={isFogActive ? 'deactivate fog' : 'activate fog'}
+        title={isFogActive ? 'deactivate fog' : 'activate fog'}
       >
-        {isFogActive ? <CloudSlash size={26} /> : <Cloud size={26} />}
+        {isFogActive ? <CloudSlash size={24} /> : <Cloud size={24} />}
       </button>
 
       <button
         onClick={toggleSound}
         className={`${styles.toggleButton} ${styles.forSound}`}
-        aria-label={isSoundActive ? 'Sound deaktivieren' : 'Sound aktivieren'}
-        title={isSoundActive ? 'Sound deaktivieren' : 'Sound aktivieren'}
+        aria-label={isSoundActive ? 'deactivate sound' : 'activate sound'}
+        title={isSoundActive ? 'deactivate sound' : 'activate sound'}
       >
         {isSoundActive ? (
-          <SpeakerSimpleSlash size={26} />
+          <SpeakerSimpleSlash size={24} />
         ) : (
-          <MusicNotes size={26} />
+          <MusicNotes size={24} />
         )}
       </button>
     </>

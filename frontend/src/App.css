@@ -4,12 +4,12 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #1e1e1e; 
+  background: #1e1e1e;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #444, #222); 
+  background: linear-gradient(180deg, #444, #222);
   border-radius: 10px;
 }
 
@@ -19,8 +19,8 @@
 
 /* Scrollbar für Firefox */
 * {
-  scrollbar-width: thin; 
-  scrollbar-color: #444 #1e1e1e; 
+  scrollbar-width: thin;
+  scrollbar-color: #444 #1e1e1e;
 }
 
 /* ----------------------button effect */
@@ -129,7 +129,9 @@ input::file-selector-button {
   gap: 0.6rem;
   position: relative;
 
-  input, select, textarea {
+  input,
+  select,
+  textarea {
     accent-color: var(--color-secondary);
     color: var(--color-light);
     background-color: var(--color-dark);
@@ -238,7 +240,7 @@ input::file-selector-button {
     }
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .cardContainer {
     flex-direction: column;
     max-width: 300px;
@@ -263,7 +265,7 @@ input::file-selector-button {
   height: 100%;
   object-fit: cover;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .imgContainer {
     max-width: 100%;
   }
