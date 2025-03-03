@@ -74,11 +74,11 @@ export async function getSpecial(req, res) {
   try {
     // owner Ids
     const ownerIds = [
-      '675ff2cfae1af798eba7cc9e', // Andreas Zwiebelhuber
-      '675ffef5d6e5dd8ec58f9d2e', // Danny (Dr. Acula)
-      '677e4cb25dcf46aa42037435', // Manuel
-      '679209ed8f892529f7764dde', // Jana (Frank Enstein)
-      '67920cdec87e847cc0b72286', // Kenneth (Grim Reaper)
+      '67b5d06af9d8a962dcd7c30e',
+      '67b5d088f9d8a962dcd7c333',
+      '67b5d09ff9d8a962dcd7c358',
+      '67b5d0b6f9d8a962dcd7c37d',
+      '67b5d0d1f9d8a962dcd7c3a2',
     ];
 
     // change strings to objectIds

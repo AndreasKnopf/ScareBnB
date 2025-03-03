@@ -27,13 +27,13 @@
 }
 
 .forFog {
-  bottom: 10px;
-  left: 20px;
+  bottom: 8px;
+  left: 50px;
 }
 
 .forSound {
-  bottom: 40px;
-  left: 20px;
+  bottom: 8px;
+  left: 10px;
 }
 
 .fogOverlay.active .fogLayer1 {
@@ -72,15 +72,15 @@
 }
 
 .fogLayer1 {
-  background-image: url('../../../assets/images/white-diamond.png');
+  background-image: url('/images/white-diamond.png');
 }
 
 .fogLayer2 {
-  background-image: url('../../../assets/images/white-diamond.png');
+  background-image: url('/images/white-diamond.png');
 }
 
 .fogLayer3 {
-  background-image: url('../../../assets/images/white-diamond.png');
+  background-image: url('/images/white-diamond.png');
   animation-delay: 35s;
 }
 

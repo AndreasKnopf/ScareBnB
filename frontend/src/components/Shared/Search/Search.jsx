@@ -71,6 +71,16 @@ export default function Search() {
   return (
     <div className={styles.searchbar}>
       <form onSubmit={handleSubmit} className={styles.searchbarForm}>
+        <div className={styles.buttonContainer}>
+          <button
+            className={`${styles.buttonSeeAll} buttonEffect`}
+            onClick={(e) => seeAllListings(e)}
+            title='See all'
+            aria-label='See all'
+          >
+            See all
+          </button>
+        </div>
         <div>
           <select
             id='selection'
@@ -134,14 +144,6 @@ export default function Search() {
             aria-label='Search'
           >
             <MagnifyingGlass size={16} />
-          </button>
-          <button
-            className={`${styles.buttonSeeAll} buttonEffect`}
-            onClick={(e) => seeAllListings(e)}
-            title='See all'
-            aria-label='See all'
-          >
-            See all
           </button>
         </div>
       </form>

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-
 @font-face {
   font-family: 'FaceYourFears';
   src: url('./assets/fonts/Faceyourfears-31J6.ttf') format('truetype');
@@ -8,6 +6,11 @@
 @font-face {
   font-family: 'Haunted';
   src: url('./assets/fonts/Haunted.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Special Elite';
+  src: url('./assets/fonts/SpecialElite.ttf') format('truetype');
 }
 
 :root {

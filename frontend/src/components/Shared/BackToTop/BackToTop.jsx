@@ -7,7 +7,7 @@ export default function BackToTop() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 10) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
