@@ -1,11 +1,12 @@
 .searchbar {
-  --height: 50px;
+  height: 50px;
   width: 90vw;
   height: var(--height);
   border-radius: 8px;
   border: solid var(--color-mediumDark) 1px;
   background: var(--gradient-circle), var(--color-mediumDark);
-  box-shadow: inset 0 3px 3px black, inset 0 -3px 3px black, 0 6px 20px black, 0 6px 20px black;
+  box-shadow: inset 0 3px 3px black, inset 0 -3px 3px black, 0 6px 20px black,
+    0 6px 20px black;
   position: absolute;
   top: calc(var(--height) / -2);
   left: 5vw; /* Centers the component (100vw - 70vw) / 2 = 15vw */
@@ -40,7 +41,9 @@
   }
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   accent-color: var(--color-secondary);
   color: var(--color-light);
   background-color: var(--color-dark);
@@ -70,28 +73,26 @@ input, select, textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .5rem;
+  gap: 0.5rem;
   /* height: var(--input-height); */
   /* aspect-ratio: 1; */
+
+  .buttonSeeAll {
+    outline: none;
+    border: 1px solid var(--color-mediumDark);
+    margin-right: 2rem;
+  }
 }
 
-@media (max-width: 1091px) {
+@media (max-width: 1160px) {
   .searchbar {
-    width: 90vw;
-    height: 7rem;
-    min-width: unset;
-    left: 5vw; 
-    /* Center searchbar mit gleichen margins */
-
+    display: flex;
     .searchbarForm {
-      flex-direction: column;
-      justify-content: space-around;
-      width: 100%;
-      padding: 1rem;
+      flex-wrap: wrap;
     }
 
     .searchbarLabel {
-      display: none ;
+      display: none;
       width: 0px;
     }
 
@@ -100,21 +101,48 @@ input, select, textarea {
     }
 
     .searchbarInput {
-      /* background-color: #FE0300; */
       display: none;
-      width: 20px;
-      height: 24px;
-      position: relative;
     }
 
     .buttonContainer {
       margin: 0;
       font-size: clamp(0.5rem, 0.3684rem + 0.5263vw, 1rem);
 
-
       .buttonSeeAll {
-        height: 2.2rem;
+        width: 5rem;
+        margin-right: 0.8rem;
       }
+    }
   }
 }
+
+@media (max-width: 500px) {
+  .searchbar {
+    .searchbarForm {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .searchbarLabel {
+      display: none;
+      width: 0px;
+    }
+
+    .searchbarGuests {
+      display: none;
+    }
+
+    .searchbarInput {
+      display: none;
+    }
+
+    .buttonContainer {
+      margin: 0.3rem;
+      font-size: clamp(0.5rem, 0.3684rem + 0.5263vw, 1rem);
+
+      .buttonSeeAll {
+        width: 5rem;
+      }
+    }
+  }
 }
