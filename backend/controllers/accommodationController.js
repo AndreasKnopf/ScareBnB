@@ -157,6 +157,12 @@ export async function createListing(req, res) {
     }
     //console.log(user);
 
+    if (user.uploadAuthorized === false) {
+      return res
+        .status(405)
+        .json({ msg: 'You are not authorized to create a listing.' });
+    }
+
     const features = req.body.features.split(',');
 
     const titleImg = req.files['titleImage'][0];
