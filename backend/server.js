@@ -13,7 +13,10 @@ const PORT = process.env.PORT;
 connectDB();
 
 // Middleware
-const allowedOrigins = ['http://localhost:5173']; // add more origins (e.g. deployment URL)
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://scarebnb-frontend.onrender.com',
+]; // add more origins (e.g. deployment URL)
 const corsOptions = {
   origin: (origin, callback) => {
     // Allow requests with no origin (like mobile apps or curl requests)
