@@ -15,7 +15,7 @@ connectDB();
 // Middleware
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://scarebnb-frontend.onrender.com',
+  process.env.RENDER_FRONTEND_URL,
 ]; // add more origins (e.g. deployment URL)
 const corsOptions = {
   origin: (origin, callback) => {
