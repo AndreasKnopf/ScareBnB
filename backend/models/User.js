@@ -92,6 +92,8 @@ const userSchema = new Schema(
         message: 'The date of birth cannot be in the future!',
       },
     },
+    uploadAuthorized: { type: Boolean, default: false },
+
     bookings: [{ type: Schema.Types.ObjectId, ref: 'Booking' }],
     favourites: [{ type: Schema.Types.ObjectId, ref: 'Accommodation' }],
     listings: [{ type: Schema.Types.ObjectId, ref: 'Accommodation' }],
