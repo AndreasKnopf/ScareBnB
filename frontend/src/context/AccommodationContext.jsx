@@ -87,6 +87,8 @@ export default function AccommodationContextProvider({ children }) {
       const status = error.response?.status;
       if (status === 403 || status === 401) {
         setShowLogin(true);
+      } else if (status === 405) {
+        toast.error(error.response?.data?.msg || 'Server Error.');
       } else {
         toast.error(error.response?.data?.msg || 'Server Error.');
       }
