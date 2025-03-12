@@ -160,7 +160,9 @@ export async function createListing(req, res) {
     if (user.uploadAuthorized === false) {
       return res
         .status(405)
-        .json({ msg: 'You are not authorized to create a listing.' });
+        .json({
+          msg: 'This is a Demo-Website. You are not authorized to create a listing. Please contact Andreas with your complete name, here registered email, phone number and reason of why you need to be allowed to make a listing. thank you ;)',
+        });
     }
 
     const features = req.body.features.split(',');
